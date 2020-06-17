@@ -1,0 +1,200 @@
+body {
+  background: #FFFFFF;
+}
+.game div.start-button-container {
+  margin: 0 auto;
+  width: 420px;
+  height: 140px;
+  background: #10281C;
+  border-radius: 12px;
+}
+.game div.start-button-container div.start-button {
+  display: inline-block;
+  margin: 6px;
+  width: 408px;
+  height: 128px;
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 128px;
+  text-align: center;
+  background: #205038;
+  color: #FFE080;
+  border-radius: 8px;
+  cursor: pointer;
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  transition: box-shadow 0.15s, text-shadow 0.15s;
+}
+.game div.start-button-container:hover div.start-button {
+  text-shadow: 0 0 10px #FFE080;
+  box-shadow: 0 0 6px 4px #205038;
+}
+.game table.tiles {
+  margin: 0 auto;
+  background: #10281C;
+  border: 4px solid #10281C;
+  border-radius: 8px;
+}
+.game table.tiles th,
+.game table.tiles td,
+.game table.tiles tr {
+  padding: 0;
+  margin: 0;
+}
+.game table.scores {
+  margin: 0 auto;
+  width: 408px;
+  color: #10281C;
+  font-size: 32px;
+  font-weight: bold;
+}
+.game table.scores td,
+.game table.scores th {
+  text-align: center;
+  border-bottom: 1px solid #10281C;
+}
+.game .fullRow {
+  height: 56px;
+  margin: 3px;
+  border-radius: 8px;
+  background: #205038;
+  text-align: center;
+  line-height: 56px;
+  font-size: 40px;
+  font-family: monospace;
+  color: #FFE080;
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+}
+.game .header {
+  text-shadow: 0 0 10px #10281C, 0 0 10px #10281C, 0 0 10px #10281C;
+}
+.game .tile {
+  width: 96px;
+  height: 96px;
+  overflow: hidden;
+  margin: 3px;
+  position: relative;
+  cursor: pointer;
+  border-radius: 8px;
+  background: #205038;
+  transition: box-shadow 0.15s, transform 0.25s;
+  box-shadow: 0 0 0 0 #205038;
+}
+.game .tile:hover {
+  box-shadow: 0 0 8px 4px #205038;
+}
+.game .tile.c div {
+  background: #FFE080;
+  border-radius: 8px;
+  transition: box-shadow 0.15s;
+}
+.game .tile.c:hover div {
+  box-shadow: 0 0 10px #FFE080;
+}
+.game .tile div {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  left: 40px;
+  top: 40px;
+}
+.game .tile div::before {
+  content: "";
+  position: absolute;
+  background: #FFE080;
+  transition: box-shadow 0.15s;
+  box-shadow: 0 0 0 #FFE080;
+}
+.game .tile div::after {
+  content: "";
+  position: absolute;
+  background: #FFE080;
+  transition: box-shadow 0.15s;
+  box-shadow: 0 0 0 #FFE080;
+}
+.game .tile:hover div::before {
+  box-shadow: 0 0 10px #FFE080;
+}
+.game .tile:hover div::after {
+  box-shadow: 0 0 10px #FFE080;
+}
+.game .tile.u div::before {
+  width: 8px;
+  height: 64px;
+  left: 4px;
+  top: -52px;
+}
+.game .tile.d div::before {
+  width: 8px;
+  height: 64px;
+  left: 4px;
+  top: 4px;
+}
+.game .tile.r div::after {
+  width: 64px;
+  height: 8px;
+  left: 4px;
+  top: 4px;
+}
+.game .tile.l div::after {
+  width: 64px;
+  height: 8px;
+  left: -52px;
+  top: 4px;
+}
+.game .tile.u.d div::before {
+  width: 8px;
+  height: 128px;
+  left: 4px;
+  top: -52px;
+}
+.game .tile.r.l div::after {
+  width: 128px;
+  height: 8px;
+  left: -52px;
+  top: 4px;
+}
+.game .won .fullRow {
+  color: #80FFFF;
+}
+.game .won .retryButton {
+  transition: box-shadow 0.15s, text-shadow 0.15s;
+  cursor: pointer;
+}
+.game .won .retryButton:hover {
+  text-shadow: 0 0 10px #80FFFF;
+  box-shadow: 0 0 8px 4px #205038;
+}
+.game .won .tile.c div {
+  background: #80FFFF;
+}
+.game .won .tile.c:hover div {
+  box-shadow: none;
+}
+.game .won .tile div::before {
+  background: #80FFFF;
+  box-shadow: none;
+}
+.game .won .tile div::after {
+  background: #80FFFF;
+  box-shadow: none;
+}
+.game .won .tile:hover {
+  box-shadow: none;
+}
+.game .won .tile:hover div::before {
+  box-shadow: none;
+}
+.game .won .tile:hover div::after {
+  box-shadow: none;
+}
+/*# sourceMappingURL=style.css.map */
